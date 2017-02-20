@@ -1,0 +1,62 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	</head>	
+	<body ng-app="calculatorApp" style="background-color:black">
+		<div class="container" align="center" ng-controller="calculatorCtrl">
+		<div class="row"> 
+		<div class="col-md-12" style="margin-bottom: 10px;">   
+		<h1 style="color:grey">Calculator</h1>
+		<br><br><br>
+		<div style="background-color:blue;height:440px;width:370px">
+		<br>
+		<table>
+			<tr>
+			<td colspan="3"><input ng-model="dScreen" style="width:265px;height:80px;padding:0px;font-size:30px" value=
+			"0" readonly></td>
+			<td><input type="button" ng-click="number(12)" name="add" value="C" class="widbut" id="clearCal"></td>
+			</tr>
+			<tr>
+			<td><input type="button" ng-click="number(7)" value="7" class="widbut" ng-model="sevenCal"></td>
+			<td><input type="button" ng-click="number(8)" value="8" class="widbut" ng-model="eightCal"></td>
+			<td><input type="button" ng-click="number(9)" value="9" class="widbut" ng-model="nineCal"></td>
+			<td><input type="button" ng-click="op(13)" value="/" class="widbut" ng-model="divideCal"></td>
+			</tr>
+			<tr>
+			<td><input type="button" ng-click="number(4)" value="4" class="widbut" ng-model="fourCal"></td>
+			<td><input type="button" ng-click="number(5)" value="5" class="widbut" ng-model="fiveCal"></td>
+			<td><input type="button" ng-click="number(6)" value="6" class="widbut" ng-model="sixCal"></td>
+			<td><input type="button" ng-click="op(14)" value="*" class="widbut" ng-model="multiplyCal"></td>
+			</tr>
+			<tr>
+			<td><input type="button" ng-click="number(1)" value="1" class="widbut" ng-model="oneCal"></td>
+			<td><input type="button" ng-click="number(2)" value="2" class="widbut" ng-model="twoCal"></td>
+			<td><input type="button" ng-click="number(3)" value="3" class="widbut" ng-model="threeCal"></td>
+			<td><input type="button" ng-click="op(15)" value="-" class="widbut" ng-model="minusCal"></td>
+			</tr>
+			<tr>
+			<td><input type="button" ng-click="number(10)" value="." class="widbut" ng-model="decimalCal"></td>
+			<td><input type="button" ng-click="number(0)" value="0" class="widbut" ng-model="zeroCal"></td>
+			<td><input type="button" ng-click="op(17)" value="=" class="widbut" ng-model="equalCal"></td>			
+			<td><input type="button" ng-click="op(16)" value="+" class="widbut" ng-model="plusCal"></td>
+			</tr>
+		</table>
+		</div>
+		</div>
+		</div>
+		</div>
+		<style>
+		.widbut {
+			width:88px;
+			padding:0px;
+			height:80px;
+		}
+		</style>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="client.js"></script>
+		</body>
+</html>
